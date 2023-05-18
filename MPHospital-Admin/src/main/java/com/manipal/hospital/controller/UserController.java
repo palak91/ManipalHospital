@@ -19,8 +19,7 @@ public class UserController {
 	
 	@GetMapping("/userinfo/{username}")
 	public UserProfile getUserInfo(@PathVariable("username") Integer id) {
-		
-		
+	
 		return userService.getUsers(id);
 	}
 	

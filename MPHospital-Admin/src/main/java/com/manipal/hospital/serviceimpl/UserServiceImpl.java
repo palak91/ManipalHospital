@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.manipal.hospital.Exception.AdminException;
 import com.manipal.hospital.Exception.UserNotFound;
 import com.manipal.hospital.pojo.UserProfile;
 import com.manipal.hospital.repo.UserRepository;
@@ -26,7 +27,7 @@ public class UserServiceImpl implements IUserService {
 			
 			return  user.get();
 		}
-		return null;
+		throw new AdminException("User Not Found in Admin Registry");
 				
 	}
 	

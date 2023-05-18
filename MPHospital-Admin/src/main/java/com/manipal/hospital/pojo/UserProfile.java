@@ -5,6 +5,7 @@ import java.util.List;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import lombok.Data;
 
 @Data
@@ -12,6 +13,7 @@ import lombok.Data;
 public class UserProfile {
 	
 	    @GeneratedValue
+	    @Id
 	    private Integer userId;
 
 	    private String firstName;
