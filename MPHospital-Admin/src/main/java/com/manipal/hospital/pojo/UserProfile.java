@@ -1,34 +1,43 @@
 package com.manipal.hospital.pojo;
 
-import java.util.Date;
-import java.util.List;
-
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.Data;
+import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
 @Entity
+@Table(name="users")
 public class UserProfile {
 	
-	    @GeneratedValue
 	    @Id
+	    @GeneratedValue(strategy=GenerationType.AUTO)
+	    @Column(name="id")
 	    private Integer userId;
 
+	    @Column(name="firstname")
 	    private String firstName;
 
+	    @Column(name="lastname")
 	    private String lastName;
 
 	    private String email;
 
+	    @Column(name="contactnumber")
 	    private String contactNo;
 
+	    @Column(name="lastsuccessfulllogin")
 	    private String lastSuccessfulLogin;
 
+	    @Column(name="username")
 	    private String userName;
-
-	    private String faxNumber;
 
 	    private String designation;
 

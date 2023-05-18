@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import com.manipal.hospital.Exception.AdminException;
 import com.manipal.hospital.Exception.UserNotFound;
 import com.manipal.hospital.pojo.UserProfile;
-import com.manipal.hospital.repo.UserRepository;
+import com.manipal.hospital.repository.UserRepository;
 import com.manipal.hospital.service.IUserService;
 
 

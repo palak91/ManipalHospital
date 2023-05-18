@@ -1,3 +1,6 @@
+ server:
+   port: 9005
+ 
  spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
@@ -9,5 +12,15 @@
     generate-ddl: true
     show-sql: true
     database-platform: org.hibernate.dialect.MySQL8Dialect 
+    
+   application:    name: admin
+  
+
+ 
+ #eureka:
+  #client:
+   # serviceUrl:
+    #  defaultZone: ${DISCOVERY_URI:http://localhost:9000/eureka}
+  
     
   
