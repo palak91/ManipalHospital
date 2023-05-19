@@ -15,10 +15,7 @@
     show-sql: true
     database-platform: org.hibernate.dialect.MySQL8Dialect 
     
-#message
-  app:
-   message:Message from application.yml 
- 
+
  #eureka:
   #client:
    # serviceUrl:

@@ -14,15 +14,10 @@
     generate-ddl: true
     show-sql: true
     database-platform: org.hibernate.dialect.MySQL8Dialect 
-    
-#message
+
+ #message
   app:
-   message:Message from application.yml 
- 
- #eureka:
-  #client:
-   # serviceUrl:
-    #  defaultZone: ${DISCOVERY_URI:http://localhost:9000/eureka}
+   message:Message from application-test.yml 
   
     
   

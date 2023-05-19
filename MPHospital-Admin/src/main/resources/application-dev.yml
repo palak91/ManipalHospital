@@ -17,8 +17,9 @@
     
 #message
   app:
-   message:Message from application.yml 
- 
+   message:Message from application-dev.yml 
+   
+   
  #eureka:
   #client:
    # serviceUrl:
